@@ -1,4 +1,4 @@
-.cardContainer{
+.cardContainer {
   background: white;
   font-family: Arial, Helvetica, sans-serif;
   border-radius: 4px;
@@ -7,34 +7,44 @@
   justify-content: flex-start;
   align-items: center;
   flex-wrap: wrap;
-  max-width: 300px;
   box-sizing: border-box;
   margin: 10px;
+  width: 300px;
 }
-.name{
+.top{
+  width: 100%;
+  display: flex;
+
+}
+.name {
   font-size: xx-large;
   width: auto;
-  max-width: 50%;
   text-align: start;
   font-weight: 600;
   margin: 0;
 }
-.surname{
+
+.surname {
   font-size: xx-large;
   width: auto;
   text-align: start;
   font-weight: 300;
   margin: 0;
 }
-.age{
+
+.age {
   font-size: small;
-  width: 30%;
+  width: 100%;
   text-align: start;
   color: grey;
+  margin-top: 0;
 }
-.location{
-  font-size: small;
+
+.location {
+  font-size: medium;
   width: 70%;
   text-align: start;
   color: grey;
+  margin-top: 0;
+  margin-bottom: 0;
 }

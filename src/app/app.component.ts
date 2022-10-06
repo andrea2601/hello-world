@@ -39,6 +39,30 @@ export class AppComponent {
     age: "18",
     location: "Catania"
     },
+    {
+    name: "John",
+    surname: "Brown",
+    age: "45",
+    location: "Londra"
+    },
+    {
+    name: "Claudia",
+    surname: "Rossi",
+    age: "18",
+    location: "Parigi"
+    },
+    {
+    name: "Mery",
+    surname: "Verdi",
+    age: "56",
+    location: "Palermo"
+    },
+    {
+    name: "Giuseppe",
+    surname: "Peppe",
+    age: "88",
+    location: "Lucca"
+    },
 ]
 
 recivedFilter(value: string){

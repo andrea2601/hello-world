@@ -1,6 +1,6 @@
 <div class="body">
   <app-search class="app-search" (sendFilter)="recivedFilter($event)"></app-search>
   <div *ngFor="let persona of obj; index as i">
-    <app-card [data]="persona" *ngIf="persona.name.toLowerCase().includes(filter) || persona.surname.toLowerCase().includes(filter)"></app-card>
+    <app-card class="app-card" [data]="persona" *ngIf="persona.name.toLowerCase().includes(filter) || persona.surname.toLowerCase().includes(filter)"></app-card>
   </div>
 </div>
