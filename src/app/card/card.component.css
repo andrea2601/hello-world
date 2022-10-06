@@ -1,0 +1,40 @@
+.cardContainer{
+  background: white;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 4px;
+  padding: 10px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 300px;
+  box-sizing: border-box;
+  margin: 10px;
+}
+.name{
+  font-size: xx-large;
+  width: auto;
+  max-width: 50%;
+  text-align: start;
+  font-weight: 600;
+  margin: 0;
+}
+.surname{
+  font-size: xx-large;
+  width: auto;
+  text-align: start;
+  font-weight: 300;
+  margin: 0;
+}
+.age{
+  font-size: small;
+  width: 30%;
+  text-align: start;
+  color: grey;
+}
+.location{
+  font-size: small;
+  width: 70%;
+  text-align: start;
+  color: grey;
+}
