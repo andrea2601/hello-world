@@ -6,11 +6,14 @@ import { Injectable } from '@angular/core';
 })
 export class ServiceService {
   constructor(public http: HttpClient) { }
-
+  people: any;
   loading: boolean = false;
 
-  loadPeople() {
+  loadPeopleList() {
     this.loading = true;
-    return this.http.get("http://localhost:3000/people");
+    this.http.get("http://localhost:3000/people").subscribe((data) => {
+      this.people = data
+      this.loading = false;
+    });
   }
 }

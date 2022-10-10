@@ -9,15 +9,10 @@ import { ServiceService } from './services/service.service';
 export class AppComponent implements OnInit {
   title = 'hello-world';
   filter = "";
-  obj: any = []
   constructor(public service: ServiceService) { }
 
   ngOnInit(): void {
-    this.service.loadPeople().subscribe((data: any) => {
-      this.obj = data;
-      this.service.loading = false;
-    });
-
+    this.service.loadPeopleList();
   }
 
   recivedFilter(value: string) {
