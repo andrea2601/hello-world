@@ -1,6 +1,11 @@
 <div class="body">
   <app-search class="app-search" (sendFilter)="recivedFilter($event)"></app-search>
+  <div class="loading" *ngIf="this.service.loading">
+    <h1 class="loadingH1">Loading...</h1>
+  </div>
   <div *ngFor="let persona of obj; index as i">
-    <app-card class="app-card" [data]="persona" *ngIf="persona.name.toLowerCase().includes(filter.toLowerCase()) || persona.surname.toLowerCase().includes(filter.toLowerCase())"></app-card>
+    <app-card class="app-card" [data]="persona"
+      *ngIf="persona.name.toLowerCase().includes(filter.toLowerCase()) || persona.surname.toLowerCase().includes(filter.toLowerCase())">
+    </app-card>
   </div>
 </div>
