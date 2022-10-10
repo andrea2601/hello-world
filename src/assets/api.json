@@ -1,0 +1,67 @@
+{
+  "people" : [
+    {
+      "id": 0,
+      "name": "Andrea",
+      "surname": "Lo Giudice",
+      "age": "24",
+      "location": "Palermo"
+    },
+    {
+      "id": 1,
+      "name": "Marco",
+      "surname": "Rossi",
+      "age": "27",
+      "location": "Milano"
+    },
+    {
+      "id": 2,
+      "name": "Giulio",
+      "surname": "Genova",
+      "age": "32",
+      "location": "Milano"
+    },
+    {
+      "id": 3,
+      "name": "Genoveffa",
+      "surname": "Romano",
+      "age": "24",
+      "location": "Roma"
+    },
+    {
+      "id": 4,
+      "name": "Giovanni",
+      "surname": "Giannone",
+      "age": "18",
+      "location": "Catania"
+    },
+    {
+      "id": 5,
+      "name": "John",
+      "surname": "Brown",
+      "age": "45",
+      "location": "Londra"
+    },
+    {
+      "id": 6,
+      "name": "Claudia",
+      "surname": "Rossi",
+      "age": "18",
+      "location": "Parigi"
+    },
+    {
+      "id": 7,
+      "name": "Mery",
+      "surname": "Verdi",
+      "age": "56",
+      "location": "Palermo"
+    },
+    {
+      "id": 8,
+      "name": "Giuseppe",
+      "surname": "Peppe",
+      "age": "88",
+      "location": "Lucca"
+    }
+  ]
+}
