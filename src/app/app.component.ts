@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ServiceService } from './services/service.service';
+import { PeopleService } from './services/service.service';
 
 @Component({
   selector: 'app-root',
@@ -8,14 +8,8 @@ import { ServiceService } from './services/service.service';
 })
 export class AppComponent implements OnInit {
   title = 'hello-world';
-  filter = "";
-  constructor(public service: ServiceService) { }
 
-  ngOnInit(): void {
-    this.service.loadPeopleList();
-  }
+  constructor(public service: PeopleService) { }
 
-  recivedFilter(value: string) {
-    this.filter = value;
-  }
+  ngOnInit(): void { }
 }

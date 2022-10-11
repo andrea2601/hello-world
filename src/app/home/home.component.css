@@ -1,0 +1,39 @@
+.body {
+  background: #0c0c5e;
+  height: 100vh;
+  width: auto;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
+
+.title {
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(255, 73, 73);
+  font-size: 10rem;
+  animation-name: opacity;
+  animation-duration: 4s;
+}
+
+.app-search {
+  width: 100%;
+  margin: 10px 0 0 0;
+}
+
+.app-card {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 10px 0 10px 0;
+  cursor: pointer;
+}
+
+.loadingH1 {
+  color: white;
+  font-size: 5rem;
+  font-family: Arial, Helvetica, sans-serif;
+}

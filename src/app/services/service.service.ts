@@ -1,19 +1,19 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { People } from '../model/people';
 
 @Injectable({
   providedIn: 'root'
 })
-export class ServiceService {
+export class PeopleService {
   constructor(public http: HttpClient) { }
-  people: any;
-  loading: boolean = false;
+  baseURL: string = "http://localhost:3000/";
 
-  loadPeopleList() {
-    this.loading = true;
-    this.http.get("http://localhost:3000/people").subscribe((data) => {
-      this.people = data
-      this.loading = false;
-    });
+  loadPeopleList(endpointURL: string) {
+    return this.http.get<People[]>(this.baseURL + endpointURL);
+  }
+
+  loadPerson(endpointURL: string, index: string) {
+    return this.http.get<People>(this.baseURL + endpointURL + index);
   }
 }

@@ -1,0 +1,12 @@
+<div class="body">
+  <app-search class="app-search" (sendFilter)="recivedFilter($event)"></app-search>
+  <div class="loading" *ngIf="loading">
+    <h1 class="loadingH1">Loading...</h1>
+  </div>
+  <div *ngFor="let persona of people; index as i">
+    <!-- <div *ngFor="let persona of obj; index as i"> -->
+    <app-card routerLink="/person/{{persona.id}}" class="app-card" [data]="persona"
+      *ngIf="persona.name.toLowerCase().includes(filter.toLowerCase()) || persona.surname.toLowerCase().includes(filter.toLowerCase())">
+    </app-card>
+  </div>
+</div>
